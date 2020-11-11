@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abdelilah Majid</title>
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/loader.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" media="(max-width: 10px)" href="./css/mobile-nav.css" id="mobile-nav" />
+    <link rel="stylesheet" href="./css/master.css" />
+    <!-- <link rel="stylesheet" href="./css/mobile.css" id="mobile" /> -->
+    <link rel="stylesheet" href="./css/media-query-global.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+  </head>
+  <body>
+    <div id="loader-div">
+      <div id="loader-div-div">
+        <div class="flex justify-center" id="loader-border-div">
+          <div class="loader-border" id="loader-border-0"></div>
+          <div class="loader-border" id="loader-border-1"></div>
+          <div class="loader-border" id="loader-border-2"></div>
+          <div class="loader-border" id="loader-border-3"></div>
+          <div class="loader-border" id="loader-border-4"></div>
+          <div class="loader-border" id="loader-border-5"></div>
+        </div>
+        <h1 class="text-center">M</h1>
+      </div>
+    </div>
+    <script src="./js/jquery/jquery-3.5.1.min.js"></script>
+    <script>
+      let loader_border = $("#loader-border-div").children();
+      let is_load_animation_done = false;
+      let is_window_loaded = false;
+      let is_load_done = false;
+      $("#loader-div h1").css({
+        opacity: 0,
+      });
+      loader_border.eq(0).css({
+        marginLeft: "+=80.5",
+        marginTop: "+=24.5",
+      });
+      loader_border.eq(1).css({
+        marginLeft: "+=80.5",
+        marginTop: "-=24.5",
+      });
+      loader_border.eq(2).css({
+        marginTop: "-=48.5",
+      });
+      loader_border.eq(3).css({
+        marginTop: "-=24.5",
+        marginLeft: "-=80.5",
+      });
+      loader_border.eq(4).css({
+        marginTop: "+=24.5",
+        marginLeft: "-=80.5",
+      });
+      loader_border.eq(5).css({
+        marginTop: "+=48.5",
+      });
+      loader_border.eq(1).animate(
+        {
+          width: "97px",
+          marginLeft: "-80px",
+          marginTop: "-55px",
+        },
+        1500,
+        function () {
+          loader_border.eq(2).animate(
+            {
+              width: "97px",
+              marginTop: "15px",
+            },
+            250,
+            function () {
+              loader_border.eq(3).animate(
+                {
+                  width: "97px",
+                  marginLeft: "-80",
+                  marginTop: "85",
+                },
+                250,
+                function () {
+                  loader_border.eq(4).animate(
+                    {
+                      width: "97px",
+                      marginLeft: "80",
+                      marginTop: "85",
+                    },
+                    250,
+                    function () {
+                      loader_border.eq(5).animate(
+                        {
+                          width: "97px",
+                          marginTop: "15",
+                        },
+                        250,
+                        function () {
+                          loader_border.eq(0).animate(
+                            {
+                              width: "97px",
+                              marginLeft: "80",
+                              marginTop: "-55",
+                            },
+                            250,
+                            function () {
+                              $("#loader-div h1").animate(
+                                {
+                                  opacity: 1,
+                                },
+                                1500,
+                                function () {
+                                  let wait_for_logo_id = setInterval(function () {
+                                    is_load_animation_done = true;
+                                    clearInterval(wait_for_logo_id);
+                                  }, 2000);
+                                },
+                              );
+                            },
+                          );
+                        },
+                      );
+                    },
+                  );
+                },
+              );
+            },
+          );
+        },
+      );
+      window.onload = function () {
+        is_window_loaded = true;
+      };
+      if (is_load_done === false) {
+        let load_timer_id = setInterval(function () {
+          if (is_load_animation_done && is_window_loaded) {
+            $("#loader-div").animate(
+              {
+                opacity: 0,
+              },
+              500,
+              function () {
+                $(this).css({
+                  display: "none",
+                });
+                clearInterval(load_timer_id);
+              },
+            );
+          }
+        }, 100);
+      }
+      console.log("is_load_done", is_load_done);
+    </script>
+    <header id="nav-header">
+      <nav class="flex">
+        <div class="flex margin-left-5pe flex-column media-flex-row fit-90pe media-justify-between">
+          <div class="flex justify-center" id="nav-top-div">
+            <ul class="ul-style-none flex">
+              <li>
+                <a href="./index.html">
+                  <img src="./png/logo.png" alt="logo" id="logo" />
+                </a>
+              </li>
+            </ul>
+            <img src="./svg/menu.svg" alt="menu" id="nav-menu-button" />
+          </div>
+          <div class="flex justify-center media-justify-right fit-content" id="nav-menu-content">
+            <ul class="ul-style-none flex flex-column media-flex-row fit-max-content">
+              <li>
+                <a href="#about"><span>01. </span>about </a>
+              </li>
+              <li>
+                <a href="#work"><span>02. </span>Work</a>
+              </li>
+              <li>
+                <a href="#contact"><span>03. </span>Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <script src="./js/mobile-detect.js"></script>
+    <script src="./js/nav-toggle.js"></script>
+    <main class="margin-top-tiny">
+      <header>
+        <div class="fit-90pe margin-left-5pe">
+          <p class="text-left font-purple">Hi, my name is</p>
+          <br />
+          <h1 class="text-left font-very-big">Majid Abdelilah.</h1>
+          <br />
+          <h1 class="text-left font-very-big">I build things for the web.</h1>
+          <br />
+          <p>
+            I'm a software engineer based in Er-Rich, Morocco specializing <br />
+            in building and designing exceptional websites.
+          </p>
+          <br /><br />
+          <div class="flex main-header-buttons">
+            <a href="#work"><button class="font-purple button bold">See Work</button></a>
+            <a href="mailto:majidabdelilahbusiness@gmail.com?cc=majidabdelilahbusiness@gmail.com"><button class="font-purple button bold">Get In Touch</button></a>
+          </div>
+        </div>
+      </header>
+
+      <div class="fit-90% margin-left-5pe margin-top-regular">
+        <div id="about" class="fit-content">
+          <div class="flex fit-100pe">
+            <h1>
+              <pre><span class="font-purple">01. </span>About Me</pre>
+            </h1>
+            <div class="border-bottom-gray-2 showcase-head"></div>
+          </div>
+          <div class="margin-top-small flex justify-between media-mobile-flex-column fit-content">
+            <div class="fit-40pe">
+              <strong>
+                Hello! I'm Majid, a software engineer based in Er-Rich, Morocco. <br /><br />
+                I enjoy creating things that live on the internet, mostly websites. My goal is to always build products that provide aesthetic looking, performant experiences.
+                <br /><br />
+                I’ve worked as an indie game developer for two years, after that I’ve started working as a front end engineer.
+                <br /><br />
+                Here are a few technologies I've been working with recently:
+              </strong>
+              <div class="fit-50pe strocke-before-div margin-top-tiny">
+                <div class="flex flex-column">
+                  <div class="flex justify-between">
+                    <strong>HTML</strong>
+                    <strong class="css margin-left-50px">css </strong>
+                  </div>
+
+                  <div class="flex justify-between">
+                    <strong>JavaScript</strong>
+                    <strong class="margin-left-50px">Jquery</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative">
+              <div class="img-shader scale"></div>
+              <div class="scale" id="img-border"></div>
+              <div class="my-face"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="work" class="margin-top-regular fit-90pe margin-left-5pe">
+        <div class="flex fit-90pe">
+          <h1>
+            <pre><span class="font-purple">01. </span>My Work</pre>
+          </h1>
+          <div class="border-bottom-gray-2 showcase-head"></div>
+        </div>
+        <div class="flex justify-center">
+          <div class="margin-top-small flex flex-column">
+            <div class="dim-on-hover">
+              <div class="flex flex-column justify-center relative height-0 fit-100pe port-links-div-0">
+                <div class="flex justify-evenly">
+                  <a href="https://abdelilah-majid.github.io/protfolio-travel-agency/" target="_blank"><img src="./svg/iconfinder_mark-github_298822.svg" alt="" /></a>
+                  <a href="https://github.com/Abdelilah-Majid/protfolio-travel-agency" target="_blank"><img src="./svg/iconfinder_share2_1814119.svg" alt="" /></a>
+                </div>
+              </div>
+              <div class="work-photos" id="travel"></div>
+
+              <div class="work-desctription box-shadow">
+                <p>This is a travel website that i built for a fictional travel agency</p>
+              </div>
+            </div>
+            <div class="flex flex-column">
+              <div class="dim-on-hover jpp">
+                <div class="flex flex-column justify-center relative height-0 fit-100pe port-links-div-1">
+                  <div class="flex justify-evenly">
+                    <a href="https://abdelilah-majid.github.io/jpp/" target="_blank"><img src="./svg/iconfinder_mark-github_298822.svg" alt="" /></a>
+                    <a href="https://github.com/Abdelilah-Majid/jpp" target="_blank"><img src="./svg/iconfinder_share2_1814119.svg" alt="" /></a>
+                  </div>
+                </div>
+                <div class="work-photos" id="jpp"></div>
+                <div class="work-desctription box-shadow jpp">
+                  <p>
+                    This is My Programming Language that I Built from Scratch using JavaScript. <br />
+                    I call it j++
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-column">
+                <div class="dim-on-hover">
+                  <div class="flex flex-column justify-center relative height-0 fit-100pe port-links-div-2">
+                    <div class="flex justify-evenly">
+                      <a href="https://abdelilah-majid.github.io/portfolio-hosting-website/" target="_blank"><img src="./svg/iconfinder_mark-github_298822.svg" alt="" /></a>
+                      <a href="https://github.com/Abdelilah-Majid/portfolio-hosting-website" target="_blank"><img src="./svg/iconfinder_share2_1814119.svg" alt="" /></a>
+                    </div>
+                  </div>
+                  <div class="work-desctription box-shadow hosting">
+                    <p>This is a web hosting website that I built for a fictional company.</p>
+                  </div>
+                  <div class="work-photos" id="hosting"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="contact" class="margin-top-regular fit-90pe margin-left-5pe">
+        <div class="flex">
+          <h1>
+            <pre><span class="font-purple">01. </span>What's Next</pre>
+          </h1>
+          <div class="border-bottom-gray-2 showcase-head"></div>
+        </div>
+        <div id="get-in-touch">
+          <h1 class="text-center margin-top-small">Get In Touch</h1>
+          <div class="flex justify-center">
+            <strong class="margin-top-tiny text-center">If you are Looking for a Professional Website for your company Consider Contacting Me</strong>
+          </div>
+          <div class="margin-top-tiny flex justify-center">
+            <a href="mailto:majidabdelilahbusiness@gmail.com?cc=majidabdelilahbusiness@gmail.com"><button class="font-purple button bold">Say Hello</button></a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="margin-top-regular flex justify-center text-center">
+      <p class="text-center">Designed & Built by Majid Abdelilah</p>
+    </footer>
+    <script src="./js/img-detect-scale.js"></script>
+  </body>
+</html>
