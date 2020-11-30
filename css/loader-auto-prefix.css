@@ -19,6 +19,8 @@
 }
 .loader-border {
  border-bottom: #7b2cbf 7px solid;
+ -webkit-border-radius: 10000px;
+ -moz-border-radius: 10000px;
  border-radius: 10000px;
  width: 97px;
  width: 0;
@@ -26,6 +28,10 @@
  margin-top: 15px;
 }
 #loader-border-0 {
+ -webkit-transform: rotateZ(30deg);
+ -moz-transform: rotateZ(30deg);
+ -ms-transform: rotate(30deg);
+ -o-transform: rotateZ(30deg);
  transform: rotateZ(30deg);
  margin-top: -55px;
  margin-left: 80px;
@@ -33,23 +39,43 @@
 #loader-border-1 {
  margin-top: -55px;
  margin-left: -80px;
+ -webkit-transform: rotateZ(150deg);
+ -moz-transform: rotateZ(150deg);
+ -ms-transform: rotate(150deg);
+ -o-transform: rotateZ(150deg);
  transform: rotateZ(150deg);
 }
 #loader-border-2 {
+ -webkit-transform: rotateZ(270deg);
+ -moz-transform: rotateZ(270deg);
+ -ms-transform: rotate(270deg);
+ -o-transform: rotateZ(270deg);
  transform: rotateZ(270deg);
  margin-right: 160px;
 }
 #loader-border-3 {
  margin-left: -80px;
  margin-top: 85px;
+ -webkit-transform: rotateZ(390deg);
+ -moz-transform: rotateZ(390deg);
+ -ms-transform: rotate(390deg);
+ -o-transform: rotateZ(390deg);
  transform: rotateZ(390deg);
 }
 #loader-border-4 {
  margin-left: 80px;
  margin-top: 85px;
+ -webkit-transform: rotateZ(510deg);
+ -moz-transform: rotateZ(510deg);
+ -ms-transform: rotate(510deg);
+ -o-transform: rotateZ(510deg);
  transform: rotateZ(510deg);
 }
 #loader-border-5 {
+ -webkit-transform: rotateZ(630deg);
+ -moz-transform: rotateZ(630deg);
+ -ms-transform: rotate(630deg);
+ -o-transform: rotateZ(630deg);
  transform: rotateZ(630deg);
  margin-left: 160px;
 }

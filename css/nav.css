@@ -4,69 +4,69 @@
 
 #nav-header,
 nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  z-index: 1000;
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ width: 100%;
+ z-index: 1000;
 }
 nav div div:first-child {
-  margin-top: 5px;
+ margin-top: 5px;
 }
 nav li {
-  display: block;
-  padding: 0.8em 0;
+ display: block;
+ padding: 0.8em 0;
 }
 nav a {
-  padding: 0.8em 0;
+ padding: 0.8em 0;
 }
 #logo {
-  width: 52px;
-  margin-top: 3px;
-  margin-left: 5px;
+ width: 52px;
+ margin-top: 3px;
+ margin-left: 5px;
 }
 nav h3 a {
-  color: black;
+ color: black;
 }
 #nav-top-div {
-  margin-bottom: 3px;
+ margin-bottom: 3px;
 }
 #nav-menu-button {
-  width: 50px;
-  position: fixed;
-  right: 13px;
-  top: 18px;
+ width: 80px;
+ position: fixed;
+ right: 13px;
+ top: 18px;
 }
 header nav {
-  background-color: #10002b;
+ background-color: #10002b;
 }
 #nav-top-div a:hover,
 #nav-top-div a:focus {
-  color: black;
-  text-decoration: none;
+ color: black;
+ text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #8b79d9;
-  font-weight: bold;
+ color: #8b79d9;
+ font-weight: bold;
 }
 #nav-menu-content a:hover,
 #nav-menu-content a:focus {
-  border-bottom: #8b79d9 2px solid;
+ border-bottom: #8b79d9 2px solid;
 }
 .current {
-  color: #7b2cbf;
+ color: #7b2cbf;
 }
 nav #nav-menu-content .current:hover,
 nav #nav-menu-content .current:focus {
-  border-bottom: 0;
-  color: #7b2cbf;
-  font-weight: normal;
-  text-decoration: none;
+ border-bottom: 0;
+ color: #7b2cbf;
+ font-weight: normal;
+ text-decoration: none;
 }
 nav span {
-  color: #7b2cbf;
+ color: #7b2cbf;
 }
 /* ====================== */
 /*          nav           */
@@ -77,69 +77,69 @@ nav span {
 /* ====================== */
 #nav-header,
 nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  z-index: 1000;
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ width: 100%;
+ z-index: 1000;
 }
 nav div div:first-child {
-  margin-top: 5px;
+ margin-top: 5px;
 }
 nav li {
-  display: block;
-  padding: 0.8em 0;
+ display: block;
+ padding: 0.8em 0;
 }
 nav a {
-  padding: 0.8em 0;
+ padding: 0.8em 0;
 }
 #logo {
-  width: 52px;
-  margin-top: 3px;
-  margin-left: 5px;
+ width: 52px;
+ margin-top: 3px;
+ margin-left: 5px;
 }
 nav h3 a {
-  color: black;
+ color: black;
 }
 #nav-top-div {
-  margin-bottom: 3px;
+ margin-bottom: 3px;
 }
 #nav-menu-button {
-  width: 50px;
-  position: fixed;
-  right: 13px;
-  top: 18px;
+ width: 70px;
+ position: fixed;
+ right: 13px;
+ top: 18px;
 }
 header nav {
-  background-color: #10002b;
+ background-color: #10002b;
 }
 #nav-top-div a:hover,
 #nav-top-div a:focus {
-  color: black;
-  text-decoration: none;
+ color: black;
+ text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #8b79d9;
-  font-weight: bold;
+ color: #8b79d9;
+ font-weight: bold;
 }
 #nav-menu-content a:hover,
 #nav-menu-content a:focus {
-  border-bottom: #8b79d9 2px solid;
+ border-bottom: #8b79d9 2px solid;
 }
 .current {
-  color: #7b2cbf;
+ color: #7b2cbf;
 }
 nav #nav-menu-content .current:hover,
 nav #nav-menu-content .current:focus {
-  border-bottom: 0;
-  color: #7b2cbf;
-  font-weight: normal;
-  text-decoration: none;
+ border-bottom: 0;
+ color: #7b2cbf;
+ font-weight: normal;
+ text-decoration: none;
 }
 nav span {
-  color: #7b2cbf;
+ color: #7b2cbf;
 }
 
 /* ====================== */
@@ -147,32 +147,32 @@ nav span {
 /* ====================== */
 
 @media screen and (orientation: landscape) {
-  /* nav */
-  /* header nav {
+ /* nav */
+ /* header nav {
         background-color: white;
     } */
-  #nav-header,
-  nav {
-    position: static;
-  }
-  #nav-menu-button {
-    display: none;
-  }
-  #nav-menu-content li {
-    display: block;
-    margin-left: 60px;
-  }
-  #nav-menu-content li:first-child {
-    margin-left: 0px;
-  }
-  #nav-menu-content {
-    margin-top: 20px;
-  }
-  #nav-menu-content {
-    font-size: 1rem;
-    /* width: 26em; */
-  }
-  /* nav */
+ #nav-header,
+ nav {
+  position: static;
+ }
+ #nav-menu-button {
+  display: none;
+ }
+ #nav-menu-content li {
+  display: block;
+  margin-left: 60px;
+ }
+ #nav-menu-content li:first-child {
+  margin-left: 0px;
+ }
+ #nav-menu-content {
+  margin-top: 20px;
+ }
+ #nav-menu-content {
+  font-size: 1rem;
+  /* width: 26em; */
+ }
+ /* nav */
 }
 
 /* ====================== */
