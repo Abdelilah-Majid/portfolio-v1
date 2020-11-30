@@ -44,12 +44,12 @@ body {
  z-index: 100;
 }
 #travel {
- background: url("../png/showcase-0.png");
+ background: url("../png/showcase-0.jpg");
  background-repeat: no-repeat;
  background-size: 100%;
 }
 #hosting {
- background: url("../png/showcase-1.png");
+ background: url("../png/showcase-1.jpg");
  background-repeat: no-repeat;
  background-size: 100%;
  margin-top: -200px;
@@ -57,7 +57,7 @@ body {
 #jpp {
  width: 600px;
  height: 400px;
- background: url("../png/j++.png");
+ background: url("../png/j++.jpg");
  background-repeat: no-repeat;
  background-size: 130% 100%;
  background-position: center;
