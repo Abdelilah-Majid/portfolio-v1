@@ -21,7 +21,7 @@ body {
  margin-left: 25px;
 }
 #about strong {
- width: 40%;
+ width: 20%;
 }
 
 .strocke-before-div strong::before {
@@ -137,13 +137,16 @@ div.work-desctription.hosting {
 }
 
 .fit-40pe {
- width: 50%;
+ width: 70%;
+}
+.fit-20pe {
+ width: 20%;
 }
 .fit-50pe {
  width: 50%;
 }
 .css {
- margin-right: 47px;
+ margin-right: 0px;
 }
 #img-border {
  margin-right: 10vw;
@@ -164,6 +167,12 @@ div.work-desctription.hosting {
 @media screen and (orientation: portrait) and (max-width: 766px) {
  body {
   zoom: 1;
+ }
+ .css {
+  margin-right: 47px;
+ }
+ .fit-20pe {
+  width: 100%;
  }
  p {
   font-size: 1.5rem;
