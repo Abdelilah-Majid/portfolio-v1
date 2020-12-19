@@ -144,7 +144,7 @@ div.work-desctription.hosting {
  width: 70%;
 }
 .fit-20pe {
- width: 20%;
+ width: 300px;
 }
 .fit-50pe {
  width: 50%;
@@ -167,16 +167,21 @@ div.work-desctription.hosting {
 #about {
  width: 100%;
 }
-
+.margin-left-50px {
+ margin-left: 200px;
+}
+.width-60vw {
+ width: 400px;
+}
 @media screen and (orientation: portrait) and (max-width: 766px) {
  body {
   zoom: 1;
  }
  .css {
-  margin-right: 47px;
+  margin-right: -20px;
  }
  .fit-20pe {
-  width: 100%;
+  width: 300px;
  }
  p {
   font-size: 1.5rem;
@@ -314,13 +319,13 @@ div.work-desctription.hosting {
   margin-top: 115px;
  }
  .margin-left-50px {
-  margin-left: 3vw;
+  margin-left: 50px;
  }
  #mobile_margin_left {
   width: 100vw;
  }
  .width-60vw {
-  width: 60vw;
+  width: 400px;
  }
 }
 @media screen and (orientation: portrait) and (min-width: 767px) {
@@ -349,8 +354,10 @@ div.work-desctription.hosting {
   width: 50vw;
   height: 40vw;
   margin-top: 45px;
+  margin-left: 140px;
  }
  .scale {
+  margin-left: 140px;
   margin-top: 45px;
  }
  .work-desctription {
@@ -400,8 +407,8 @@ div.work-desctription.hosting {
   top: 400px;
  }
  .my-face {
-  width: 50vw;
-  height: 40vw;
+  width: 350px;
+  height: 250px;
   margin-top: 45px;
  }
  .scale {
